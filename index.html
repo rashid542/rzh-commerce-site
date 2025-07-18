@@ -3,66 +3,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RZH Commerce LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: #f5f9ff;
       color: #333;
     }
     header {
-      background-color: #1e2a38;
+      background: linear-gradient(135deg, #007BFF, #00C6FF);
       color: white;
-      padding: 2rem;
+      padding: 60px 20px;
       text-align: center;
     }
-    main {
-      padding: 2rem;
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
     }
     footer {
-      background-color: #1e2a38;
+      background: #002c5f;
       color: white;
-      padding: 1rem;
       text-align: center;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .section h2 {
-      color: #1e2a38;
+      padding: 20px 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>RZH Commerce LLC</h1>
-    <p>Professional Amazon FBA Services</p>
+    <p>Experts in Amazon FBA & eCommerce Solutions</p>
   </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <main>
-    <div class="section">
-      <h2>About Us</h2>
-      <p>Founded on July 15, 2025, RZH Commerce LLC is a US-based e-commerce company specializing in Amazon FBA services.</p>
-    </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>RZH Commerce LLC is a US-based company founded on July 15, 2025, specializing in Amazon FBA and eCommerce services. Our mission is to help emerging and growing businesses maximize their presence and profitability on Amazon.</p>
+  </section>
 
-    <div class="section">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Winning product research</li>
-        <li>Supplier sourcing & verification</li>
-        <li>Listing optimization</li>
-        <li>Sales growth strategies</li>
-      </ul>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer full-service eCommerce solutions including:</p>
+    <ul>
+      <li>Winning Product Research</li>
+      <li>Verified Supplier Sourcing</li>
+      <li>Amazon Store Setup and Management</li>
+      <li>Listing Optimization</li>
+      <li>Sales Growth Strategies</li>
+    </ul>
+    <div class="image-grid">
+      <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee1b" alt="People working on laptop">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="Team collaboration">
+      <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" alt="Work setup in library">
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:Rashidhazoorbux@gmail.com">Rashidhazoorbux@gmail.com</a></p>
-      <p>Phone: +1 323-521-2530</p>
-    </div>
-  </main>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:Rashidhazoorbux@gmail.com">Rashidhazoorbux@gmail.com</a></p>
+    <p>Phone: +1 323-521-2530</p>
+  </section>
 
   <footer>
     <p>&copy; 2025 RZH Commerce LLC. All rights reserved.</p>
